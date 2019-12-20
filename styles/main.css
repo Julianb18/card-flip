@@ -9681,7 +9681,7 @@ body {
 .scene .card:hover {
   transform: rotateY(0.5turn);
 }
-.scene .card .card__face {
+.scene .card .card-face {
   position: absolute;
   top: 0;
   left: 0;
@@ -9691,13 +9691,33 @@ body {
   transition: 1s ease-in-out;
   -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
-.scene .card .card__face img {
-  width: 240px;
-  height: 300px;
-  object-fit: cover;
+
+.card-face-front {
+  background: url(../images/lol-back.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.scene .card .card__face--back {
+
+.card-face-back {
   transform: rotateY(0.5turn);
+}
+
+.card-one {
+  background: url(../images/thresh-noon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-two {
+  background: url(../images/xerath2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-three {
+  background: url(../images/nunu.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */
