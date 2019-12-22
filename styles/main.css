@@ -9660,7 +9660,61 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: black;
+  background: linear-gradient(black, #04001b);
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.alex {
+  text-align: center;
+  color: #7e5f5f;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -90%;
+  left: 39%;
+  overflow: hidden;
+}
+
+.align-issa {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.a-name {
+  animation-name: alec;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+.a-is {
+  animation-name: is;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.a-a {
+  animation-name: aa;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.poes {
+  animation-name: pos;
+  animation-iteration-count: 1;
+  animation-duration: 0.3s;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  font-size: 5rem;
 }
 
 .scene {
@@ -9668,6 +9722,7 @@ body {
   display: flex;
   justify-content: space-between;
   perspective: 800px;
+  position: relative;
 }
 .scene .card {
   position: relative;
@@ -9709,7 +9764,7 @@ body {
 }
 
 .card-two {
-  background: url(../images/xerath2.jpg);
+  background: url(../images/xerath.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -9718,6 +9773,61 @@ body {
   background: url(../images/nunu.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@keyframes alec {
+  0% {
+    transform: translateY(-150px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes is {
+  0% {
+    transform: translateX(-150px);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(0px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes aa {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(-30px);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes pos {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
